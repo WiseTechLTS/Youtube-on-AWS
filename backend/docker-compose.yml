@@ -3,7 +3,7 @@ version: '3.9'
 services:
   backend:
     container_name: backend
-    image: youtubecloneflexcomplete
+    image: ipkyle/ytbackend-dev-latest:latest
     ports:
       - "80:8000"
     command: sh ./entrypoint.sh
