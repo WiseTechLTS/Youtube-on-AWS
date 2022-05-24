@@ -27,7 +27,7 @@ function YouTubePage() {
         {
           params: {
             q: searchTerm,
-            key: process.env.AKIASJXQGYP647LRXIUH,
+            key: process.env.REACT_APP_YT_API_KEY,
             part: "snippet",
             type: "video",
             maxResults: 5,
