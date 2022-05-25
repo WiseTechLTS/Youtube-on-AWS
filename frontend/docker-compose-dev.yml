@@ -1,18 +1,18 @@
 version: '3.9'
 
 services:
-
+    
   simple-webapp:
-    container_name: youtubecloneflexcomplete
-
-
+    ports:
+      - "8001:8000" 
+    
+    container_name: youtubecloneflexcompletelatest
     build:
       context: .
       dockerfile: Dockerfile.dev
 
-      volunes:
-        -  ./:/app
-        -  /app/node_modules
-
-      ports:
-        - "8001:8000"
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    command: ["npm", "run", "test",]
+  
